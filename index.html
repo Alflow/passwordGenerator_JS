@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENERADOR DE PASSWORDS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="izquierda">
+        <h1>Ejercicio 5</h1>
+        <p><strong>Crear un programa en JavaScript para generar contraseñas. Dicho programa cumplirá las siguientes
+                condiciones:</strong></p>
+        <ol>
+            <li>Dados tres arrays con los siguientes contenidos:
+                <ul>
+                    <li>Un array que contenga las letras minúsculas (a-z) y mayúsculas (A-Z).</li>
+                    <li>Un array con los números (0-9).</li>
+                    <li>Un array con caracteres especiales (diez caracteres).</li>
+                </ul>
+            </li>
+            <li>El programa pedirá al usuario que introduzca una de las siguientes opciones:
+                <ul>
+                    <li>D: Generar una contraseña débil.</li>
+                    <li>F: Generar una contraseña fuerte.</li>
+                    <li>T: Terminar.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Funcionamiento:</h3>
+        <ul>
+            <li>Las contraseñas se mostrarán por consola.</li>
+            <li>El programa pedirá al usuario que introduzca una opción hasta que elija terminar.</li>
+            <li>Si se introduce una opción no válida, se informará al usuario en una ventana y volverá a pedir una
+                opción.</li>
+            <li>Debe aceptar las opciones en mayúscula y minúscula.</li>
+            <li>Se crearán al menos dos funciones, una para contraseña débil y otra para contraseña fuerte.</li>
+        </ul>
+
+        <h3>Características de las contraseñas:</h3>
+        <p><strong>Contraseña débil:</strong></p>
+        <ul>
+            <li>Compuesta por 5 letras y 3 números.</li>
+            <li>Se utilizarán los arrays definidos en el programa principal.</li>
+            <li>Tanto la posición como el valor se obtendrán de forma aleatoria.</li>
+        </ul>
+
+        <p><strong>Contraseña fuerte:</strong></p>
+        <ul>
+            <li>Compuesta por 6 letras, 4 números y 3 caracteres especiales.</li>
+            <li>Se utilizarán los arrays definidos en el programa principal.</li>
+            <li>Tanto la posición como el valor se obtendrán de forma aleatoria.</li>
+            <li>En la primera posición aparecerá un carácter especial, la primera letra generada debe ser
+                obligatoriamente mayúscula, el resto minúsculas y ningún valor se podrá repetir.</li>
+        </ul>
+
+        <h3>Resultados</h3>
+        <p>Débil: 47TA9ZQd</p>
+        <p>Débil: o5ña5A4h</p>
+        <p>Fuerte: ?16$4LA2Y(IhJ</p>
+        <p>Fuerte: &OI#=t890Prñ2</p>
+        <p>Fuerte: @=sdQ57F?B38i</p>
+    </div>
+    <div class="derecha">
+        <article>
+            <h2>CONTRASEÑA DÉBIL</h2>
+            <p id="passDebil1"></p>
+        </article>
+        <article>
+            <h2>CINCO CONTRASEÑAS DÉBILES</h2>
+            <p id="passDebil2"></p>
+        </article>
+        <article>
+            <h2>CONTRASEÑA FUERTE</h2>
+            <p id="passfuerte1"></p>
+        </article>
+        <article>
+            <h2>CINCO CONTRASEÑAS FUERTES</h2>
+            <p id="passfuerte2"></p>
+        </article>
+
+
+
+    </div>
+
+
+
+    <script src="index2.js"></script>
+</body>
+
+</html>
